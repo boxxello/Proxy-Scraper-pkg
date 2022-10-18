@@ -42,6 +42,12 @@ proxy_scraper.grab_web_proxies()
 proxy_scraper.validate_web_proxies()
 proxy_scraper.save_proxies()
 ```
+either way you can also run it from a console:
+usage:
+```
+pyhton -m proxy_scraper [--input name_of_the_file.txt] [--output 'name_of_the_file2.txt']
+                        [--debug]
+```
 
 
 TODO
