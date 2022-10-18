@@ -15,6 +15,7 @@ requirements = [
     'geoip2==4.6.0',
     'gevent==22.10.1',
     'retrying==1.3.3',
+    'fake-useragent==0.1.11',
 
 ]
 
