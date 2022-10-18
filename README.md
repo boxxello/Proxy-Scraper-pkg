@@ -1,6 +1,7 @@
 # Proxy Scraper 
 Proxy Scraper is an open source tool that finds public proxies from multiple sources and asynchronously checks them.
 
+![image](https://github.com/boxxello/Proxy-Scraper-pkg/blob/master/static/demo_gif.gif)
 
 ```
 pip install -U git+https://github.com/boxxello/Proxy-Scraper-pkg.git
