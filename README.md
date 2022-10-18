@@ -26,6 +26,22 @@ All the requirements will be installed with the setup.py - or you can manually i
 pip install -r requirements.txt
 ```
 
+Proxy-Scraper-pkg Hello World
+---------
+
+```py
+from proxy_scraper.getproxy import GetProxy
+
+proxy_scraper = GetProxy()
+proxy_scraper.init()
+proxy_scraper.load_input_proxies()
+proxy_scraper.validate_input_proxies()
+proxy_scraper.load_plugins()
+proxy_scraper.grab_web_proxies()
+proxy_scraper.validate_web_proxies()
+proxy_scraper.save_proxies()
+```
+
 
 TODO
 ----
