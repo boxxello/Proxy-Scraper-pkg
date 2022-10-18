@@ -149,7 +149,7 @@ class GetProxy(object):
 
         rp = requests.get('http://httpbin.org/get')
         self.origin_ip = rp.json().get('origin', '')
-        logger.info(f"[*] Current Ip Address: HIDDEN FOR DEMO")
+        logger.info(f"[*] Current Ip Address: {self.origin_ip}")
 
         self.geoip_reader = geoip2.database.Reader(os.path.join(self.base_dir,
                                                                 'data/GeoLite2-Country.mmdb'))
