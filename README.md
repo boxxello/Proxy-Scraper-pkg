@@ -47,7 +47,7 @@ either way you can also run it from a console.
 <br />
 Usage:
 ```
-pyhton -m proxy_scraper [--input name_of_the_file.txt] [--output 'name_of_the_file2.txt']
+pyhton -m proxy_scraper [--input name_of_the_file.txt] [--output name_of_the_file2.txt]
                         [--debug]
 ```
 
