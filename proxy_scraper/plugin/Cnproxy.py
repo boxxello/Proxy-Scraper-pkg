@@ -97,6 +97,6 @@ if __name__ == '__main__':
     p.start()
 
     for i in p.result:
-        print(i)
+        logger.debug(i)
 
-    print(len(p.result))
+    logger.debug(len(p.result))

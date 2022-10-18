@@ -51,5 +51,5 @@ if __name__ == '__main__':
     p.start()
 
     for i in p.result:
-        print(i)
-    print(len(p.result))
+        logger.debug(i)
+    logger.debug(len(p.result))
