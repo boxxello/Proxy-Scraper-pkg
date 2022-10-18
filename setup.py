@@ -2,7 +2,7 @@ import re
 import ast
 from setuptools import setup, find_packages
 
-with open('README.md'.upper()) as readme_file:
+with open('README.md') as readme_file:
     readme = readme_file.read()
 
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
