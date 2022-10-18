@@ -48,6 +48,7 @@ TODO
 ----
 -   Save the current ips in a db.
 -   Make an API to retrieve the latest scraped ips without having you to run it on your machine.
+-   Turn every plugin into an instance of a child which inherits its properties from a father.
 
 
 Contributing
