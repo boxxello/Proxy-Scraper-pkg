@@ -20,6 +20,7 @@ Python 3.8+
 -   [geoip2](https://pypi.org/project/geoip2/)
 -   [retrying](https://pypi.org/project/retrying/)
 -   [gevent](https://pypi.org/project/gevent/)
+-   [fake-useragent](https://pypi.org/project/fake-useragent/)
 
 All the requirements will be installed with the setup.py - or you can manually installed them by running.
 
@@ -42,14 +43,21 @@ proxy_scraper.grab_web_proxies()
 proxy_scraper.validate_web_proxies()
 proxy_scraper.save_proxies()
 ```
-either way you can also run it from a console:
-usage:
+either way you can also run it from a console.
+<br />
+Usage:
 ```
 pyhton -m proxy_scraper [--input name_of_the_file.txt] [--output 'name_of_the_file2.txt']
                         [--debug]
 ```
 
+Experiencing issues?
+-------------
 
+Make sure that You using latest version!!!
+```
+pip install -U git+https://github.com/boxxello/Proxy-Scraper-pkg.git
+```
 TODO
 ----
 -   Save the current ips in a db.
@@ -74,6 +82,7 @@ Licensed under the Apache License, Version 2.0
 -   This product includes GeoLite2 data created by MaxMind, available from* [http://www.maxmind.com](http://www.maxmind.com).
 -   This product includes Retrying available from* [Retrying github page](https://github.com/rholder/retrying).
 -   This product includes Gevent available from* [Gevent github page](https://github.com/gevent/gevent).
+-   This product includes fake-user-agent available from* [fake-user-agent github page](https://github.com/hellysmile/fake-useragent).
 
 Thanks goes to these existing libraries
 -------------
