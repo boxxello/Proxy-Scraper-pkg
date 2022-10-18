@@ -1,7 +1,66 @@
-# Proxy-Scraper-pkg
-A simple but effective proxy scraper and validator
+# Proxy Scraper 
+Proxy Scraper is an open source tool that finds public proxies from multiple sources and asynchronously checks them.
 
 
 ```
-pip install -U 
+pip install -U git+https://github.com/boxxello/Proxy-Scraper-pkg.git
 ```
+
+Features
+--------
+-   Support protocols: HTTP(S)
+-   Automatically removes duplicate proxies
+-   Validates the proxies that are inputted from an input file
+
+Requirements
+------------
+
+Python 3.8+
+-   [geoip2](https://pypi.org/project/geoip2/)
+-   [retrying](https://pypi.org/project/retrying/)
+-   [gevent](https://pypi.org/project/gevent/)
+
+All the requirements will be installed with the setup.py - or you can manually installed them by running.
+
+```
+pip install -r requirements.txt
+```
+
+
+TODO
+----
+-   Save the current ips in a db.
+-   Make an API to retrieve the latest scraped ips without having you to run it on your machine.
+
+
+Contributing
+-------------
+
+-   Fork it: <https://github.com/boxxello/Proxy-Scraper-pkg/fork>
+-   Create your feature branch: `git checkout -b MY-NEW-FEATURE`
+-   Commit your changes: `git commit -am 'Add some feature'`
+-   Push to the branch: `git push origin MY-NEW-FEATURE`
+-   Submit a pull request!
+
+License
+-------------
+
+Licensed under the Apache License, Version 2.0
+
+-   This product includes GeoLite2 data created by MaxMind, available from* [http://www.maxmind.com](http://www.maxmind.com).
+-   This product includes Retrying available from* [Retrying github page](https://github.com/rholder/retrying).
+-   This product includes Gevent available from* [Gevent github page](https://github.com/gevent/gevent).
+
+Thanks goes to these existing libraries
+-------------
+
+-   This product include portions of code from [GetProxy](https://github.com/ywang-wnlo/getproxy).
+-   This product include portions of code from [ProxyBroker2](https://github.com/bluet/proxybroker2).
+
+
+** **_Disclaimer & WARNINGS:_**
+
+1. **Use** this ONLY for **Educational Purposes!** By using this code you agree
+   that **I'm not responsible for any kind of trouble** caused by the code. <br>
+2. **Make sure web-scraping is legal in your region.**
+
