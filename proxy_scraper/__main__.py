@@ -1,6 +1,6 @@
 from proxy_scraper.getproxy import GetProxy
 
-if __name__== '__main__':
+if __name__ == '__main__':
     g = GetProxy()
     g.init()
     g.load_input_proxies()

@@ -4,8 +4,9 @@ from itertools import chain
 import retrying
 import requests
 from fake_useragent import UserAgent
-from proxy_scraper.proxy_scraper.Utils import  IPPortPatternGlobal
-from utils.logging import get_logger
+from proxy_scraper.Utils import  IPPortPatternGlobal
+
+from proxy_scraper.loggers import get_logger
 
 logger = get_logger(__name__)
 

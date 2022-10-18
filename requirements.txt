@@ -1,0 +1,3 @@
+gevent
+geoip2
+retrying

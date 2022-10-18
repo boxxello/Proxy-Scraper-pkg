@@ -1,12 +1,12 @@
 from __future__ import unicode_literals, absolute_import, division, print_function
-import logging
 import retrying
 import requests
 from fake_useragent import UserAgent
 
-from proxy_scraper.proxy_scraper.Utils import  IPPortPatternLine
+from proxy_scraper.Utils import  IPPortPatternLine
+from proxy_scraper.loggers import get_logger
 
-logger = logging.getLogger(__name__)
+logger = get_logger(__name__)
 
 
 class Proxy(object):
@@ -24,7 +24,6 @@ class Proxy(object):
             'http://www.proxylists.net/http_highanon.txt',
             'http://www.proxylists.net/http.txt',
             'http://ab57.ru/downloads/proxylist.txt',
-
             'https://api.proxyscrape.com/?request=getproxies&proxytype=http',
             'http://ipaddress.com/proxy-list/',
             'https://www.sslproxies.org/',
@@ -48,7 +47,8 @@ class Proxy(object):
                 re_ip_port_result = self.re_ip_port_pattern.findall(rp.text)
                 if not re_ip_port_result:
                     raise Exception("empty")
-
+            else:
+                re_ip_port_result = []
         except Exception as e:
             logger.error("[-] Request url {url} error: {error}".format(url=url, error=str(e)))
             while self.proxies:

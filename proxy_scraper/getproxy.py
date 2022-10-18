@@ -1,11 +1,11 @@
 from __future__ import unicode_literals, absolute_import, division, print_function
 
 from datetime import datetime
+import gevent
+from gevent import monkey
 
-import gevent.monkey
-
-from proxy_scraper import signal_name, load_object, DATA_DIR_PATH
-from proxy_scraper.logging import get_logger
+from proxy_scraper.Utils import signal_name, load_object, DATA_DIR_PATH
+from proxy_scraper.loggers import get_logger
 
 gevent.monkey.patch_all()
 
@@ -148,7 +148,7 @@ class GetProxy(object):
 
         rp = requests.get('http://httpbin.org/get')
         self.origin_ip = rp.json().get('origin', '')
-        logger.info("[*] Current Ip Address: %s" % self.origin_ip)
+        logger.info("[*] Current Ip Address: --" )
 
         self.geoip_reader = geoip2.database.Reader(os.path.join(self.base_dir,
                                                                 'data/GeoLite2-Country.mmdb'))

@@ -30,7 +30,7 @@ setup(
     package_dir={},
     entry_points={
         'console_scripts': [
-            'proxy_scraper=proxy_scraper.cli:main'
+            'proxy_scraper=proxy_scraper.main:main'
         ]
     },
     include_package_data=True,

@@ -1,11 +1,11 @@
 from __future__ import unicode_literals, absolute_import, division, print_function
 import re
-import logging
 import retrying
 import requests
 
+from proxy_scraper.loggers import get_logger
 
-logger = logging.getLogger(__name__)
+logger = get_logger(__name__)
 
 
 class Proxy(object):

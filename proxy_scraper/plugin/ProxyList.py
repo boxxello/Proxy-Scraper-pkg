@@ -4,7 +4,8 @@ import re
 import base64
 import retrying
 import requests
-from utils.logging import get_logger
+
+from proxy_scraper.loggers import get_logger
 
 logger= get_logger(__name__)
 
