@@ -5,16 +5,16 @@ from setuptools import setup, find_packages
 with open('README.md'.upper()) as readme_file:
     readme = readme_file.read()
 
-
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
-
 
 with open('proxy_scraper/__init__.py', 'rb') as f:
     version = str(ast.literal_eval(_version_re.search(
         f.read().decode('utf-8')).group(1)))
 
-
 requirements = [
+    'geoip2==4.6.0',
+    'gevent==22.10.1',
+    'retrying==1.3.3',
 
 ]
 
