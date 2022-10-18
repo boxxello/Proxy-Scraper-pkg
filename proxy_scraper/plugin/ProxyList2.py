@@ -32,7 +32,6 @@ class Proxy(object):
             'https://www.proxy-list.download/api/v1/get?type=socks4',
             'https://www.proxy-list.download/api/v1/get?type=socks5',
         ]
-        print(urls)
 
         return urls
 
