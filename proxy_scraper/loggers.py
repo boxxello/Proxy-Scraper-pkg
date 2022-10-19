@@ -16,7 +16,7 @@ class Utilities:
         :return:
         """
 
-        app_dir = os.path.join(os.path.expanduser("~"), ".generator_mail")
+        app_dir = os.path.join(os.path.expanduser("~"), ".proxy_scraper")
         if not os.path.isdir(app_dir):
             # If the app data dir does not exist create it
             os.mkdir(app_dir)
@@ -56,7 +56,7 @@ def load_logging_config(logger_name) -> None:
     my_logger.addHandler(stream_handler)
 
 
-def get_logger(logger_name="Gmail-Generator") -> logging.Logger:
+def get_logger(logger_name="proxy_scraper") -> logging.Logger:
     """
     Convenience method to load the app logger
 
